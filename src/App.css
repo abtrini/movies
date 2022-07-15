@@ -1,0 +1,286 @@
+.container {
+  margin: 0px;
+  border: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  min-width: 1200px;
+  margin: auto;
+}
+
+nav {
+  background-color: brown;
+  font-size: 20px;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+
+nav ul li a{
+  text-decoration: none;
+  color:white;
+  padding: 15px;
+  transition: .5s;
+  border-radius: 50px;
+  border:1px solid white;
+  margin-right: 30px;
+}
+
+nav ul a:hover {
+  background-color: burlywood;
+  color: brown;
+}
+
+nav img {
+  margin-left: 15px;
+  width: 75px;
+  height: 75px;
+}
+
+.appTitle {
+  position: relative;
+  text-shadow: 2px 2px brown;
+  top:100px;
+  text-align: center;
+  padding: 30px;
+  text-transform: uppercase;
+  font-size: 100px;
+  line-height: 132px;
+  color: white;
+  font-family: Arial Black, Helvetica, sans-serif;
+}
+
+.appTitle span{
+  font-size: 135px;
+
+  color:bisque;
+}
+
+.content {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(2, auto);
+  align-items: center;
+  /* background-color: aqua; */
+}
+
+.content img {
+  width: 180px;
+  height: 220px;
+  border-radius: 50px;
+}
+
+.innerContent {
+  font-size: 10px;
+}
+
+.desc {
+  color: darkred;
+  text-transform: uppercase;
+}
+
+.main {
+  background-color: cornsilk;
+  padding: 20px;
+  display: grid;
+  grid-column-gap: 20px;
+  grid-row-gap: 10px;
+  grid-template-columns: repeat(2, auto);
+}
+
+.welcome {
+  background-image: url("./Oop.jpg");
+  object-fit: cover;
+  text-align: center;
+ background-size: cover;
+ background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+}
+
+#genreOptions {
+  border: 0px;
+  margin-right: 90px;
+  width: 200px;
+  height: 30px;
+  font-size: 20px;
+  border-radius: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.form {
+  display: grid;
+  grid-row-gap: 10px;
+  /* grid-gap: 30px; */
+  grid-template-columns: repeat(2, auto);
+  justify-content: center;
+}
+
+#glass {
+  cursor: pointer;
+}
+
+input {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 18;
+  padding: 5px;
+  outline: none;
+}
+
+.inputBtn {
+  padding: 5px;
+  width: 211px;
+  height: 35px;
+  border-radius: 30px;
+  border: 0px;
+  text-align: center;
+  background-color: brown;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#genreOptions {
+  padding: 5px;
+  width: 211px;
+  height: 50px;
+}
+
+#genreOptions:hover {
+  background-color: brown;
+  color: aliceblue;
+}
+
+.filterMain {
+  background-color: burlywood;
+  display: grid;
+  font-size: 30px;
+  text-align: center;
+  margin: 0;
+  padding: 30px;
+}
+
+.detailspage {
+  position: relative;
+  background-color: antiquewhite;
+  padding: 20px;
+  height: 100vh;
+  margin: auto;
+}
+
+.detailsmain {
+  display: grid;
+  grid-template-columns: repeat(2, 5fr 4fr);
+  align-items: center;
+  justify-content: center;
+}
+
+.detailsmain img{
+  border-radius: 50px;
+}
+
+.footer {
+  background-color: brown;
+
+  color: aliceblue;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+  padding: 20px;
+  border-top: 2px solid white;
+}
+
+.moviePlot {
+  background-color: aqua;
+}
+
+.noMovie {
+  
+  position: relative;
+  padding-top: 100px;
+  height: 100vh;
+  font-size: 150px;
+  line-height: 120px;
+  text-transform: uppercase;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: brown;
+  background-color: cornsilk;
+  text-align: center;
+}
+
+.noMovie button {
+  background-color: brown;
+  color: aliceblue;
+  text-transform: uppercase;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: 900;
+  font-size: 30px;
+  width: 320px;
+  height: 110px;
+  border: 0px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.noMovie button:hover {
+  background-color: yellowgreen;
+  border: 0px;
+}
+
+.about {
+  color: brown;
+  background-color: cornsilk;
+  padding: 50px;
+}
+
+
+
+.criticsmain {
+  background-color: black;
+  color: white;
+padding:50px;
+  grid-template-columns: repeat(2, 5fr 4fr);
+  text-align: center;
+  height: 100vh;
+}
+
+.criticsmain img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border:5px solid white
+}
+
+.crictdesc {
+  color: darkred;
+  text-transform: uppercase;
+}
+
+.cric {
+  background-color: brown;
+  border-radius: 15%;
+  padding:15px;
+  border: 0px;
+  width: 150px;
+}
+.cric a{
+color: white;
+
+}
+
+
+.cric:hover {
+  background-color: yellowgreen;
+  color: brown;
+  border: 0px;
+}
