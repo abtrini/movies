@@ -237,9 +237,17 @@ input {
 }
 
 .about {
+  position: relative;
   color: brown;
+  padding: 20px;
   background-color: cornsilk;
-  padding: 50px;
+  height: 100vh;
+  text-align: center;
+  font-size: 20px;
+}
+
+.about h1{
+font-size: 105px;
 }
 
 
