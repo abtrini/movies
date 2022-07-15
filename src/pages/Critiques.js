@@ -12,7 +12,7 @@ const Critiques = ({movies, setMovies}) => {
         const response = await axios.get(`http://localhost:5000/movies/${id}`);
         
         setMovies(response.data);
-
+ 
       } catch (err) {
         console.log(err);
       }
