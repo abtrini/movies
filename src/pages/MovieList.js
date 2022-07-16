@@ -28,10 +28,8 @@ return (
             <div className="innerContent">
               <h1><span className="desc">Title: </span>{movie.title} </h1>
               <h3><span className="desc">Year: </span>{movie.year}</h3>
-              <h3><span className="desc">Director: </span> {movie.director}                    </h3>
-              <h3><span className="desc">Actors: </span>{movie.actors}</h3>
-              <h3><span className="desc">Plot: </span>{movie.plot}</h3>
-              <h3><span className="desc">Genre: </span>{movie.genres.map((rating) => " / " + rating + " ")} </h3>
+              <h3><span className="desc">Rating: </span>{movie.rating}</h3>
+              <h3><span className="desc">Genre: </span>{movie.genres.map((genre) => " / " + genre + " ")} </h3>
             </div>
           </div>
         ))}

@@ -13,6 +13,7 @@ import Critiques from "./pages/Critiques";
 function App() {
   const [movies, setMovies] = useState("");
   const [searchTerm, setSearchTerm] = useState("");
+  const [results, setResults] = useState("");
 
   useEffect(() => {
     const loadMovieInfoInfo = async () => {
@@ -25,7 +26,7 @@ function App() {
     };
     loadMovieInfoInfo();
   }, []);
-
+//
   const searchMovie = (e) => {
     e.preventDefault();
     const newFilter = movies.filter((value) => {
@@ -33,7 +34,7 @@ function App() {
     });
     setMovies(newFilter);
   };
-
+//think about creating another state called results......then render from results instead of movie(to fix "back button") 
   const changeCategory = (e) => {
     e.preventDefault();
     const filteredMovies = movies.filter((movie) =>
@@ -42,6 +43,10 @@ function App() {
     setMovies(filteredMovies);
     console.log(filteredMovies);
   };
+
+  
+
+
 
   return (
     <>

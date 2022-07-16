@@ -65,9 +65,11 @@ nav img {
 
 .content {
   display: grid;
-  grid-gap: 10px;
+  grid-gap: 15px;
   grid-template-columns: repeat(2, auto);
   align-items: center;
+  justify-content: left;
+  font-size: 15px;
   /* background-color: aqua; */
 }
 
@@ -253,15 +255,22 @@ font-size: 105px;
 
 
 .criticsmain {
+  display: grid;
   background-color: black;
   color: white;
-padding:50px;
-  grid-template-columns: repeat(2, 5fr 4fr);
-  text-align: center;
-  height: 100vh;
+  padding:80px;
+  grid-template-columns: repeat(2, auto);
+  gap:50px;
+  min-height: 100vh;
+  justify-content:center ;
+  align-items: center;
+  font-size: 12px;
+  border:5px solid white
+
 }
 
 .criticsmain img {
+  
   width: 200px;
   height: 200px;
   object-fit: cover;
@@ -272,7 +281,10 @@ padding:50px;
 .crictdesc {
   color: darkred;
   text-transform: uppercase;
+  
 }
+
+
 
 .cric {
   background-color: brown;

@@ -20,19 +20,26 @@ const Critiques = ({movies, setMovies}) => {
     loadMovieInfo();
   }, [id]);
   return (
-    <div className="container">
-      <div className="criticsmain">
-        <img src={movies.criticimage} alt={movies.title} />
+  <div className="container">
+  <div className="criticsmain">
+  {movies.critic.map(movie=>(
+    < >
+            <img src={movie.criticimage} alt={movie.title} />
+
+      <div>
         <span>
-          <h4><span className="crictdesc">Critic Name:</span> {movies.critic}</h4>
+          <h4><span className="crictdesc">Critic Name:</span> {movie.name}</h4>
           <h4> <span className="crictdesc">Movie: </span>{movies.title}</h4>
-          <h4> <span className="crictdesc">FeedBack:</span> {movies.feedback}</h4>
-          <h4> <span className="crictdesc">Rating:</span> {movies.rating}</h4>
-
-
+          <h4> <span className="crictdesc">FeedBack:</span> {movie.feedback}</h4>
+          <h4> <span className="crictdesc">Rating:</span> {movies.rating}%</h4> 
         </span>
       </div>
+      
+      </ >
+        ))}
+      </div>
   </div>
+
   )
 }
 
