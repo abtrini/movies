@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import SearchBar from "./SearchBar";
 import {useNavigate} from "react-router-dom";
-const MovieList = ({movies, searchTerm, setSearchTerm,  searchMovie, changeCategory,}) => {
+const MovieList = ({movies, searchTerm, setSearchTerm,  searchMovie, changeCategory, results, setResults}) => {
   let history = useNavigate();
 if(movies.length === 0){
   return <div className="container noMovie">

@@ -30,7 +30,8 @@ function App() {
   const searchMovie = (e) => {
     e.preventDefault();
     const newFilter = movies.filter((value) => {
-      return value.title.toLowerCase().includes(searchTerm.toLowerCase());
+      return value.title.toLowerCase().includes(searchTerm.toLowerCase()) 
+      || value.year.includes(searchTerm) || value.genres.includes(searchTerm);
     });
     setMovies(newFilter);
   };
@@ -38,13 +39,19 @@ function App() {
   const changeCategory = (e) => {
     e.preventDefault();
     const filteredMovies = movies.filter((movie) =>
-      movie.genres.includes(e.target.value)
-    );
+      movie.genres.includes(e.target.value));
     setMovies(filteredMovies);
     console.log(filteredMovies);
   };
 
-  
+  // const changeCategory = (e) => {
+  //   e.preventDefault();
+  //   const filteredMovies = movies.filter((movie) =>
+  //     movie.genres.includes(e.target.value)
+  //   );
+  //   setMovies(filteredMovies);
+  //   console.log(filteredMovies);
+  // };
 
 
 
@@ -67,6 +74,8 @@ function App() {
                   searchTerm={searchTerm}
                   setSearchTerm={setSearchTerm}
                   changeCategory={changeCategory}
+                  results={results}
+                  setResults={setResults}
                 />
               }
             />
